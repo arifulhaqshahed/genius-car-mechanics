@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "name": "ENGINE DIAGNOSTIC",
+      "price": 400,
+      "description": "Mechanics work in a variety of automotive service settings, including car dealers, tire stores",
+      "img": "https://i.ibb.co/YbhPmKz/Automobile-mechanic-repairman-hands-repairing-a-car-engine-automotive-workshop-with-a-wrench-car-ser.jpg"
+    },
+    {
+      "id": 2,
+      "name": "WHEEL ALIGNMENT",
+      "price": 200,
+      "description": "Mechanics work in a variety of automotive service settings, including car dealers, tire stores",
+      "img": "https://i.ibb.co/v42WQK9/Portrait-of-a-smiling-fixing-a-car-engine-in-his-garage.jpg"
+    },
+    {
+      "id": 3,
+      "name": "OIL CHANGING",
+      "price": 100,
+      "description": "Mechanics work in a variety of automotive service settings, including car dealers, tire stores",
+      "img": "https://i.ibb.co/vJPFjyC/Photo-of-Unrecognizable-male-mechanic-measuring-the-oil-level-of-an-engine-at-an-auto-shop-Mechanic.jpg"
+    },
+    {
+      "id": 4,
+      "name": "WHEEL ALIGNMENT",
+      "price": 200,
+      "description": "Mechanics work in a variety of automotive service settings, including car dealers, tire stores",
+      "img": "https://i.ibb.co/h1QknX2/Woman-repairing-a-car-in-auto-repair-shop.jpg"
+    },
+    {
+      "id": 5,
+      "name": "TIRE STORES",
+      "price": 200,
+      "description": "Mechanics work in a variety of automotive service settings, including car dealers, tire stores",
+      "img": "https://i.ibb.co/sgCQ478/Closeup-of-unrecognizable-mechanic-replacing-car-brake-pads-The-car-is-lifted-with-hydraulic-jack-at.jpg"
+    },
+    {
+      "id": 6,
+      "name": "GAS FILLING",
+      "price": 200,
+      "description": "Mechanics work in a variety of automotive service settings, including car dealers, tire stores",
+      "img": "https://i.ibb.co/xSqpTfP/Mechanic-working-at-a-garage-and-wearing-a-facemask-during-the-COVID-19-pandemic-reopening-of-busine.jpg"
+    },
+    {
+      "id": 7,
+      "name": "WHEEL ALIGNMENT",
+      "price": 150,
+      "description": "Mechanics work in a variety of automotive service settings, including car dealers, tire stores",
+      "img": "https://i.ibb.co/WWzNz6K/Mechanic-checks-the-engine-repair-list-at-the-garage.jpg"
+    },
+    {
+      "id": 8,
+      "name": "WHEEL ALIGNMENT",
+      "price": 180,
+      "description": "Mechanics work in a variety of automotive service settings, including car dealers, tire stores",
+      "img": "https://i.ibb.co/dJZ44tp/Professional-mechanic-working-on-the-engine-of-the-car-in-the-garage-Car-repair-service-The-concept.jpg"
+    },
+    {
+      "id": 9,
+      "name": "WHEEL ALIGNMENT",
+      "price": 210,
+      "description": "Mechanics work in a variety of automotive service settings, including car dealers, tire stores",
+      "img": "https://i.ibb.co/dJZ44tp/Professional-mechanic-working-on-the-engine-of-the-car-in-the-garage-Car-repair-service-The-concept.jpg"
+    }
+  ]
