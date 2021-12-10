@@ -1,45 +1,13 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <>
-      {/* <Navbar
-        bg="dark"
-        variant="dark"
-        sticky="top"
-        collapseOnSelect
-        expand="lg"
-      >
-        <Container>
-          <Navbar.Brand href="#home">Genius Car Mechanics</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse
-            className="justify-content-end"
-            id="responsive-navbar-nav"
-          >
-            <Nav className="ms-auto me-4">
-              <Nav.Link as={Link} to="/home">
-                Home
-              </Nav.Link>
-              <Nav.Link as={Link} to="/home#services">
-                Services
-              </Nav.Link>
-              <Nav.Link as={Link} to="/home#experts">
-                Experts
-              </Nav.Link>
-              <Nav.Link as={Link} to="/login">
-                Login
-              </Nav.Link>
-            </Nav>
-            <Navbar.Text>
-              Signed in as: <a href="#login">Mark Otto</a>
-            </Navbar.Text>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
-
       <Navbar
         sticky="top"
         collapseOnSelect
@@ -54,10 +22,10 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/home#services">
+              <Nav.Link as={HashLink} to="/home#services">
                 Services
               </Nav.Link>
-              <Nav.Link as={Link} to="/home#experts">
+              <Nav.Link as={HashLink} to="/home#experts">
                 Experts
               </Nav.Link>
               <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
@@ -75,11 +43,17 @@ const Header = () => {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link className="me-3 fw-bolder " as={Link} to="/login">
-                Login
-              </Nav.Link>
+              {user?.email ? (
+                <Button className="me-2" onClick={logOut} variant="light">
+                  Logout
+                </Button>
+              ) : (
+                <Nav.Link className="me-3 fw-bolder " as={Link} to="/login">
+                  Login
+                </Nav.Link>
+              )}
               <Navbar.Text>
-                <a href="#login">Mark Otto</a>
+                <a href="#login">{user?.displayName}</a>
               </Navbar.Text>
             </Nav>
           </Navbar.Collapse>
